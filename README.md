@@ -3,12 +3,12 @@
 If you want test out 3 finger middle click in linux use commands:
 
 ```bash
-    sudo apt-get install dkms
-    cd linux/drivers/hid
-    make clean
-    make
-    sudo rmmod hid-magicmouse
-    sudo insmod ./hid-magicmouse.ko middle_click_3finger=1
+sudo apt-get install dkms
+cd linux/drivers/hid
+make clean
+make
+sudo rmmod hid-magicmouse
+sudo insmod ./hid-magicmouse.ko middle_click_3finger=1
 ```
 
 If you want use as service use:
