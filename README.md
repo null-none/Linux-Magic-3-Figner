@@ -3,7 +3,7 @@
 If you want test out 3 finger middle click in linux use commands:
 
 ```bash
-	sudo apt-get install dkms
+    sudo apt-get install dkms
     cd linux/drivers/hid
     make clean
     make
