@@ -1,4 +1,6 @@
-#sudo bluetoothctl connect {94:F6:D6:B6:0E:B3} bluetooth device
+#!/bin/bash
+
+sudo bluetoothctl connect 94:F6:D6:B6:0E:B3
 sudo apt-get install dkms
 cd ./linux/drivers/hid
 make clean
