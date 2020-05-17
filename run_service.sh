@@ -1,4 +1,5 @@
-#!/bin/bas
+#!/bin/bash
+
 sudo apt-get install dkms blueman sysfsutils
 
 sudo bluetoothctl connect 94:F6:D6:B6:0E:B3
