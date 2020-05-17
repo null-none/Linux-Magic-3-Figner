@@ -22,15 +22,14 @@ Source `/etc/systemd/system/applemouse.service`
 ```bash
 [Unit]
 Description=Linux Apple Magic Mouse 3 Finger
-After=network.target
+
 [Service]
-Type=simple
-PIDFile=/var/run/getl/applemouseoad.pid
-ExecStart=/bin/sh -c {PATH}/run_service.sh
-TimeoutStartSec=0
-Restart=on-failure
+ExecStart=/Linux-Magic-3-Figner/run_service.sh
+Type=oneshot
+RemainAfterExit=yes
+
 [Install]
-WantedBy=default.target
+WantedBy=multi-user.target
 ```
 
 To enable your service after reboot, you run the command:
